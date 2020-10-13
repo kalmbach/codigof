@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Codigo F</title>
+    <link rel="stylesheet" href="tachyons.min.css">
+  </head>
+  <body class="code pa4">
+    <div class="fl w-100">
+      <h1 class="f1 light-red">Código F</h1>
+    </div>
+    <div>
+      <form class="measure">
+        <fieldset class="f4 fw6 ph0 mh0 bn">
+          <div class="mt3">
+            <label class="db fw6 lh-copy f6">Ingresá tu texto y tu clave</label>
+            <textarea id="texto" class="b pa2 input-reset ba bg-transparent w-100 lh-copy" placeholder="texto"></textarea>
+          </div>
+          <input id="clave" class="ma2 ml0 b pa2 input-reset ba bg-transparent w-100" type="text" placeholder="clave"> 
+          <input id="cifrar" class="ma2 ml0 pa2" type="button" value="cifrar">
+          <input id="descifrar"class="ma2 ml0 pa2" type="button" value="descrifrar">
+          <div class="mt3">
+            <label class="db fw6 lh-copy f6">Resultado</label>
+            <textarea id="output" class="b pa2 input-reset ba bg-transparent w-100 lh-copy"></textarea>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
