@@ -27,7 +27,7 @@ cifrar.addEventListener('click', () => {
   const key = clave.value;
 
   const payload = encrypt(key, data);
-  output.innerText = payload;
+  output.value = payload;
 });
 
 descifrar.addEventListener('click', () => {
@@ -35,5 +35,5 @@ descifrar.addEventListener('click', () => {
   const key = clave.value;
 
   const payload = decrypt(key, data);
-  output.innerText = payload;
+  output.value = payload;
 });
