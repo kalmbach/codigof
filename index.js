@@ -24,7 +24,7 @@ const output = document.getElementById('output');
 
 cifrar.addEventListener('click', () => {
   const data = texto.value;
-  const key = clave.value;
+  const key = clave.value || ' '.repeat(data.length);
 
   const payload = encrypt(key, data);
   output.value = payload;
@@ -32,7 +32,7 @@ cifrar.addEventListener('click', () => {
 
 descifrar.addEventListener('click', () => {
   const data = texto.value;
-  const key = clave.value;
+  const key = clave.value || ' '.repeat(data.length);
 
   const payload = decrypt(key, data);
   output.value = payload;
